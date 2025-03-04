@@ -13,7 +13,7 @@ async function convertToMp3() {
     convertButton.disabled = true;
 
     try {
-        const response = await fetch(`http://localhost:8000/convert/?url=${encodeURIComponent(url)}`, {
+        const response = await fetch(`https://youtube-to-mp3-13l8.onrender.com/convert/?url=${encodeURIComponent(url)}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
